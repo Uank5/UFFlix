@@ -3,29 +3,31 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <style>
-      body {
-        margin: 40px auto;
-        max-width: 650px;
-        line-height: 1.6;
-        font-size: 18px;
-        font-family: "Courier New", Courier, monospace;
-        color: #444;
-        padding: 0 10px;
-      }
-      h2 {
-        line-height: 1.2;
-      }
-    </style>
+    <title>HTTP Video Streaming</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
   <body>
-    <h2>HTTP Video Streaming</h2>
-    <p>Este vídeo está sendo transmitido em vez de baixado.</p>
-    <video id="videoPlayer" width="650" controls muted="muted" autoplay>
-      <source src="/mongo-video" type="video/mp4" />
-    </video>
-    <i>Bacharelado em Sistemas de Informação da Universidade Federal Fluminense - Professor Flavio Seixas</i>
+    <header>
+      <h1>HTTP Video Streaming</h1>
+      <p>Este vídeo está sendo transmitido em vez de baixado.</p>
+    </header>
+    <main>
+      <div class="video-container">
+        <video id="videoPlayer" controls muted="muted" autoplay>
+          <source src="/mongo-video" type="video/mp4" />
+          Seu navegador não suporta o elemento de vídeo.
+        </video>
+      </div>
+      <footer>
+        <p>
+          <i>Bacharelado em Sistemas de Informação da Universidade Federal Fluminense - Professor Flavio Seixas</i>
+        </p>
+      </footer>
+    </main>
   </body>
 </html>
