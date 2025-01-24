@@ -1,0 +1,16 @@
+{
+  "name": "http-video-stream",
+  "version": "1.0.0",
+  "description": "My instructions use docker but you can run mongodb yourself locally as well.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.21.2",
+    "mongodb": "^3.7.4",
+    "nodemon": "^2.0.22"
+  }
+}
