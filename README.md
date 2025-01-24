@@ -1,29 +1,10 @@
-## Requirements
+## Requisitos
 
-My instructions use docker but you can run mongodb yourself locally as well.
-
-## How to initialize the db with a video
+## Como inicializar o banco de dados com um vídeo
 
 ```
-# copy the bigbuck video from our last demo
-cp ../http-video-stream/bigbuck.mp4 .
+# Adicione o vídeo que deseja transmitir em nosso projeto e referencie seu arquivo dentro do index.js
 
-# After starting the server
-curl  localhost:8000/init-video
+#Depois de iniciar o servidor(npm start)
+curl localhost:8000/video-init
 ```
-
-## Start the server
-
-```
-# how to start
-docker-compose up -d
-
-# how to turn off
-docker-compose down -v
-```
-
-## Bonus Challenge
-
-This way of initializing the database is pretty bad.
-Could you make an upload page?
-What about a page that lists all the videos in the db that lets you pick which one to play?
