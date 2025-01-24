@@ -2,9 +2,13 @@
 
 ## Como inicializar o banco de dados com um vídeo
 
-```
 # Adicione o vídeo que deseja transmitir em nosso projeto e referencie seu arquivo dentro do index.js
 
-#Depois de iniciar o servidor(npm start)
+Inicie o mongodb atraves do comando
+mongod
+
+Iniciar o servidor usando(npm start)
+
+Depois de iniciar o servidor
 curl localhost:8000/video-init
-```
+para fazer o upload do video 
